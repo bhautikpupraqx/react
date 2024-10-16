@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: test
+
+    steps:
+
+      - name: Check files
+        run: ls -a
+
+      - name: path
+        run: pwd  
+        
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+
