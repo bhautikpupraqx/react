@@ -23,4 +23,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Check files
+        run: ls -a
 
